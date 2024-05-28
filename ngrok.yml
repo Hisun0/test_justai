@@ -1,0 +1,7 @@
+version: "2"
+authtoken: 2h3D3xb9DcrGDZWfHRhrZXgIFru_84jMWQ4RvGVziSSiUH179
+tunnels:
+  test:
+    proto: http
+    addr: 8080
+    domain: mentally-prime-possum.ngrok-free.app
