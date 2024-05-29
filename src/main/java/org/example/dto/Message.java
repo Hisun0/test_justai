@@ -1,6 +1,5 @@
 package org.example.dto;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -17,12 +16,10 @@ public class Message {
     private Object[] attachments;
     private long conversation_message_id;
     private Message[] fwd_messages;
-    private boolean important;
-    @JsonProperty("is_hidden") // пришлось добавить аннотацию, так как почему-то вылетала UnrecognizedPropertyException
-    private boolean is_hidden;
+    private Boolean important;
+    private Boolean is_hidden;
     private long peer_id;
     private long random_id;
     private String text;
-    @JsonProperty("is_mentioned_user") // пришлось добавить аннотацию, так как почему-то вылетала UnrecognizedPropertyException
-    private boolean is_mentioned_user;
+    private Boolean is_mentioned_user;
 }
